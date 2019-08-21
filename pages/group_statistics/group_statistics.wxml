@@ -1,0 +1,39 @@
+<view>统计</view>
+
+<view class='view_root'>
+
+
+  <view class='title'></view>
+
+  <view class='content'>
+
+   <view>{{groupName}} 统计: </view>
+    <view class='view_content_list'>
+      <view class='view_content_item' catchtap='userClick' data-id='{{index}}' wx:for='key' wx:for="{{contents}}">
+        <text decode='true'>{{index+1}}.&nbsp;{{item.name}}</text>
+        <text decode='true'>{{item.num}}</text>
+      </view>
+    </view>
+
+    <view>组员统计: </view>
+    <view class='view_user_list'>
+      <view class='view_user_item' wx:for='key' catchtap='userClick' data-id='{{index}}' wx:for="{{users}}">
+        <text decode='true'>{{index+1}}.&nbsp;{{item.userName}}</text>
+        <view class='view_usercontent_list'>
+          <view class="view_usercontent_item" wx:for="{{item.content}}">
+            <text class='usercontent' decode='true'>{{item.name}}&nbsp;{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+  <view class='bottom '></view>
+
+
+
+
+</view>

@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/create_user_dingke/createdingke",
+    "pages/userdetail/userdetail",
+    "pages/groupdetail/groupdetail",
+    "pages/group_statistics/group_statistics",
+    "pages/create_group_dingke/create_group_dingke",
+    "pages/daydayup/daydayup",
+    "pages/selectclass/selectclass",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/creategroup/creategroup"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "cloud": true
+
+}

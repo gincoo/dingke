@@ -1,0 +1,39 @@
+/* pages/creatgroup/creatgroup.wxss */
+.mycontainer{
+  display: flex;
+  flex-direction: column;
+}
+.section{
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.creategroup-text{
+  font-size: 16rpx;
+  vertical-align: middle;
+}
+.weui-input {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
+.weui-cells {
+  height: 500rpx;
+  margin: 10rpx;
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #FFFFFF;
+  line-height: 1.41176471;
+  font-size: 17px;
+  border: 1rpx solid #D9D9D9;
+}
+.creategroup-button-view{
+  display: flex;
+  flex-direction: row;
+}
+.creategroup-button{
+  vertical-align: middle;
+  height: 70rpx;
+  width: 140rpx;
+}

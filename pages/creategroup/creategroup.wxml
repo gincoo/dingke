@@ -1,0 +1,24 @@
+<view class='view_container'>
+
+
+
+  <view class='view_title'>
+    <text>组名:</text>
+    <view class='view_input1'>
+      <input class='input_title' auto-focus placeholder="输入课程名" bindinput='groupNameInput'></input>
+    </view>
+  </view>
+
+  <view class='view_content'>
+    <text>简介:</text>
+    <view class='view_input2'>
+      <textarea class='input_detail' auto-focus placeholder="输入课程组简介" bindinput='groupDetailInput'></textarea>
+    </view>
+  </view>
+
+  <view class='view_bottom'>
+    <button size='mini' bindtap='backClick'>返回</button>
+    <button size='mini' bindtap='createClick'>创建</button>
+  </view>
+
+</view>

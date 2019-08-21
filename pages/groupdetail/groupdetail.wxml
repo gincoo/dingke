@@ -1,0 +1,22 @@
+<view class='view_root'>
+  groupdetail
+  <view class='view_title'>
+    <text>{{groupName}}</text>
+  </view>
+
+  <view class='view_btn' catchtap='btnClick'>
+    <button size='mini'>统计</button>
+  </view>
+
+  <view class='view_item_root'>
+
+    <view class='view_item' wx:for='key' wx:for="{{reponseData}}" data-id='{{index}}' catchtap='itemClick'>
+      <text class='text_item'>{{item.date}}</text>
+      <text class='text_item_right' wx:if='{{item.state==0}}'>创建</text>
+      <text class='text_item_right' wx:elif='{{item.state==1}}'>{{item.userNum}}人</text>
+      <text class='text_item_right' wx:elif='{{item.state==2}}' style='color:grey'>已结束</text>
+    </view>
+
+  </view>
+
+</view>

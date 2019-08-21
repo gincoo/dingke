@@ -1,0 +1,31 @@
+<view class='view_root'>
+
+  <view class='view_title'>
+    <text>{{pageData.title}}</text>
+  </view>
+
+  <view class='view_content'>
+    <text decode='true'>{{pageData.content}}</text>
+
+    <view class='view_user_list'>
+      <view class='view_user_item' catchtap='userClick' data-id='{{index}}' wx:for="{{userLists}}">
+        <text decode='true'>{{index+1}}.&nbsp;{{item.userName}}</text>
+        <view class='view_usercontent_list'>
+          <view class="view_usercontent_item" wx:for="{{item.content}}">
+            <text class='usercontent' decode='true'>{{item.name}}&nbsp;{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class='view_bottom'>
+    <button size='mini' catchtap='createDingke'>发布定课</button>
+    <button class='btn_forward' size='mini'>转发到群</button>
+  </view>
+
+  
+
+</view>

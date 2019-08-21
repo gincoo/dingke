@@ -1,0 +1,44 @@
+<view class='view_container'>
+createdingke
+  <view class='view_title'>
+    <text decode='true'>{{groupName}}&nbsp;{{title}}</text>
+
+  </view>
+
+
+  <view class='view_content'>
+
+    <view class='view_content_list'>
+
+      <view class='view_list_item' wx:for='{{items}}'>
+        <text>{{index+1}}</text>
+        <view class='view_text' catchtap='itemClick' data-id='{{index}}'>
+          <!-- <input class='input-radius' placeholder='选择定课' placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style='color:#999999;font-size:14px' /> -->
+          <text  wx:if='{{item===null}}' decode='true'>选择定课</text>
+          <text  wx:else='' decode='true' style='color:black'>{{item}}</text>
+        </view>
+        <view class='stepper'>
+          <text class='{{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+          <input bindinput='bindManual' value='{{num}}'>{{num}}</input>
+          <text bindtap='bindPlus'>+</text>
+        </view>
+
+
+      </view>
+
+    </view>
+
+  </view>
+
+
+  <view class='view_bottom'>
+    <button size='mini' bindtap='addItem'>新增</button>
+    <button size='mini' bindtap='submit'>发布</button>
+
+
+  </view>
+
+
+
+
+</view>

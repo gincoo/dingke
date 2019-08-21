@@ -1,0 +1,25 @@
+<view class='root'>
+
+  <view class='view_title'>
+    <view class="iconfont icon-group" id='title'>
+      <text class='text_title'>已参与的群定课</text>
+    </view>
+  </view>
+
+  <view class='view_item' wx:key='key' wx:for="{{groupLists}}"  data-id='{{index}}' catchtap='itemClick'>
+      <text class='text_item'>{{item.groupName}}</text>
+      <text class='text_item2'>进入</text>    
+  </view>
+
+  <view catchtap='createGroup' class='view_btn'>
+    <button class='btn1' size='mini'>创建新组</button>
+  </view>
+
+  
+
+
+
+
+
+
+</view>

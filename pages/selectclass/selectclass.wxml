@@ -1,0 +1,28 @@
+<include src="../../wxSearchView/wxSearchView.wxml" />
+
+<view class='view_container'>
+  <view class='view_title'>
+
+  </view>
+
+
+  <view class='view_content'>
+
+    <view class='view_list'>
+      <view class='view_list_item1' wx:for='{{dataLists}}' wx:key='' catchtap='pickClick' data-id='{{item}}' >
+        <text class='text_item_left' decode='true'>{{item.name}}</text>
+        <view class='view_item_right'>+</view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='view_bottom'>
+
+
+  </view>
+
+  <!-- 此页面需要增加分页 -->
+
+
+</view>

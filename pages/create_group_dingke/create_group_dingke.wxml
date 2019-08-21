@@ -1,0 +1,30 @@
+<view class='root'>
+
+  <view class='title'>{{groupName}}</view>
+
+  <view class='content'>
+    <view class='view_date'>
+      <text>日期: 今天 {{date}} 周一</text>
+    </view>
+
+    <view class='view_detail'>
+      <text>内容描述:</text>
+      <view class='view_input'>
+        <input class='input_detail' auto-focus placeholder="输入课程组简介"></input>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <view class='bottom'>
+    <button size='mini'>返回</button>
+    <button size='mini'>开始</button>
+  </view>
+
+
+
+
+
+</view>

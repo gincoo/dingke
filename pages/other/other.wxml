@@ -1,0 +1,21 @@
+<view class='mycontainer'>
+  <view class="section">
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      日期: {{date}}
+    </picker>
+  </view>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        小组：{{array[index]}} 今日未开始
+      </view>
+    </picker>
+  </view>
+  <view class="weui-cells">
+    <input class="weui-input" auto-focus placeholder="输入内容" />
+  </view>
+  <view class='creategroup-button-view'>
+    <button class='creategroup-button'>取消</button>
+    <button class='creategroup-button'>创建</button>
+  </view> 
+</view>

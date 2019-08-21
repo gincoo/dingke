@@ -1,0 +1,39 @@
+.view_root{
+  display: flex;
+  flex-direction: column;
+}
+
+.view_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.view_user_list{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.view_title{
+  
+}
+
+.view_user_item{
+  margin-top: 3px;
+}
+
+.view_usercontent_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap : wrap;
+}
+
+.view_usercontent_item{
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.view_bottom{
+  margin-top: 20px;
+  display:flex;
+  justify-content: center; 
+}
